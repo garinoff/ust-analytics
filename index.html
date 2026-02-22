@@ -351,9 +351,13 @@
                     <span class="font-semibold text-sm" data-i18n="nav4_title">04. Геополитика &amp; Цивилизация</span>
                     <span class="block text-xs opacity-60 mt-0.5" data-i18n="nav4_sub">Морфология расселения</span>
                 </button>
+                <button onclick="navigate('report')" class="nav-item" data-target="report">
+                    <span class="font-semibold text-sm" data-i18n="nav5_title">05. Исследование</span>
+                    <span class="block text-xs opacity-60 mt-0.5" data-i18n="nav5_sub">Стратегический анализ</span>
+                </button>
                 <button onclick="navigate('src')" class="nav-item" data-target="src">
-                    <span class="font-semibold text-sm" data-i18n="nav5_title">05. Источники &amp; Инвестиции</span>
-                    <span class="block text-xs opacity-60 mt-0.5" data-i18n="nav5_sub">Данные и краудинвестинг</span>
+                    <span class="font-semibold text-sm" data-i18n="nav6_title">06. Источники &amp; Инвестиции</span>
+                    <span class="block text-xs opacity-60 mt-0.5" data-i18n="nav6_sub">Данные и краудинвестинг</span>
                 </button>
             </div>
             <div class="p-6 border-t border-slate-800 text-xs">
@@ -596,7 +600,7 @@
                     <div class="interactive-card bg-white p-6 rounded-lg border border-slate-200 cursor-pointer" onclick="toggleDetails('detail-mining')">
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-2xl">&#9935;&#65039;</span>
-                            <span class="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded" data-i18n="tag_mining">Добыча</span>
+                            <span class="text-xs bg-teal-500 text-white px-2 py-1 rounded font-semibold" data-i18n="tag_mining">Добыча</span>
                         </div>
                         <h3 class="font-bold text-slate-800 text-lg" data-i18n="mining_title">Удалённые Кластеры</h3>
                         <p class="text-sm text-slate-500 mt-2" data-i18n="mining_sub">Рентабельность месторождений с низким содержанием руды.</p>
@@ -609,7 +613,7 @@
                     <div class="interactive-card bg-white p-6 rounded-lg border border-slate-200 cursor-pointer" onclick="toggleDetails('detail-ports')">
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-2xl">&#9875;</span>
-                            <span class="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded" data-i18n="tag_ports">Порты</span>
+                            <span class="text-xs bg-teal-500 text-white px-2 py-1 rounded font-semibold" data-i18n="tag_ports">Порты</span>
                         </div>
                         <h3 class="font-bold text-slate-800 text-lg" data-i18n="ports_title">Вынос Портовой Зоны</h3>
                         <p class="text-sm text-slate-500 mt-2" data-i18n="ports_sub">Загрузка судов на шельфе без дноуглубления.</p>
@@ -622,7 +626,7 @@
                     <div class="interactive-card bg-white p-6 rounded-lg border border-slate-200 cursor-pointer" onclick="toggleDetails('detail-urban')">
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-2xl">&#127759;</span>
-                            <span class="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded" data-i18n="tag_urban">Урбанистика</span>
+                            <span class="text-xs bg-teal-500 text-white px-2 py-1 rounded font-semibold" data-i18n="tag_urban">Урбанистика</span>
                         </div>
                         <h3 class="font-bold text-slate-800 text-lg" data-i18n="urban_title">Линейные Города (uCity)</h3>
                         <p class="text-sm text-slate-500 mt-2" data-i18n="urban_sub">Новая логика расселения вдоль трасс.</p>
@@ -980,11 +984,6 @@
                         Зарегистрируйтесь и получите доступ к инвестиционным инструментам в технологию,
                         признанную аналитиками как системообразующую инфраструктуру XXI века.
                     </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-                        <div class="text-blue-300 text-xs font-mono bg-blue-900 bg-opacity-50 border border-blue-700 px-4 py-2 rounded">
-                            rsw-systems.com/?r=134624
-                        </div>
-                    </div>
                     <a href="https://rsw-systems.com/?r=134624" target="_blank"
                        class="inline-block bg-teal-500 hover:bg-teal-400 text-slate-900 font-bold px-10 py-3 rounded-lg text-base transition-all hover:scale-105 shadow-md">
                         <span data-i18n="rsw_cta_btn">Зарегистрироваться на RSW Systems</span> ↗
@@ -992,6 +991,94 @@
                     <p class="text-slate-500 text-xs mt-4" data-i18n="rsw_cta_note">
                         Реферальная ссылка. Инвестиции сопряжены с риском. Не является финансовым советом.
                     </p>
+                </div>
+
+            </section>
+
+            <!-- REPORT -->
+            <section id="report" class="content-section hidden fade-in">
+                <header class="mb-10 border-b border-slate-200 pb-6">
+                    <h2 class="text-3xl font-bold text-slate-900" data-i18n="report_h2">Многоуровневый стратегический анализ uST Inc.</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-4xl" data-i18n="report_intro">
+                        Полноформатное аналитическое исследование технологии uST (GTI), охватывающее пять стратегических слоёв: технологический, экономический, системный, геополитический и инвестиционный.
+                    </p>
+                </header>
+
+                <!-- Document Title Card -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-8 mb-8">
+                    <div class="flex items-start gap-6">
+                        <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-xs font-semibold text-teal-600 uppercase tracking-wider mb-1" data-i18n="report_doc_label">Аналитический документ</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="report_doc_title">Многоуровневый стратегический анализ uST Inc.</h3>
+                            <p class="text-slate-500 text-sm" data-i18n="report_doc_desc">Google Docs · 2026 · RU</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-8 mb-8">
+                    <h3 class="text-xl font-bold text-slate-800 mb-5 flex items-center gap-2">
+                        <span class="text-teal-500">◆</span>
+                        <span data-i18n="report_summary_title">Краткое содержание</span>
+                    </h3>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p data-i18n="report_summary_p1">
+                            Исследование охватывает полный технологический цикл uST Inc. (GTI) от физических основ до глобальной стратегии. Анализ подтверждает достижение уровня TRL 9 — максимальной технологической готовности к промышленному масштабированию.
+                        </p>
+                        <p data-i18n="report_summary_p2">
+                            Технологический слой демонстрирует кратное превосходство над конкурентами: материалоёмкость в 10 раз ниже метро, коэффициент аэродинамического сопротивления uFlash Cd=0.06, уникальный портфель интеллектуальной собственности стоимостью свыше $400 млрд.
+                        </p>
+                        <p data-i18n="report_summary_p3">
+                            Экономическая модель подтверждает IRR 20–35% при CAPEX в 10 раз ниже метро. Концепция IDC (Infrastructure Development Corporation) открывает доступ к земле как скрытому активу инфраструктурных проектов.
+                        </p>
+                        <p data-i18n="report_summary_p4">
+                            Геополитический и системный анализ показывает стратегическую роль uST как независимой от климата, санкций и энергокризисов инфраструктуры XXI века, способной изменить архитектуру глобальной логистики и расселения.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-5 text-center">
+                        <div class="text-2xl font-extrabold text-teal-700">TRL 9</div>
+                        <div class="text-xs font-semibold text-teal-600 mt-1" data-i18n="report_kpi1">Технологическая готовность</div>
+                        <p class="text-xs text-slate-400 mt-1 leading-snug" data-i18n="report_kpi1_desc">Максимальная готовность к промышленному масштабированию</p>
+                    </div>
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-5 text-center">
+                        <div class="text-2xl font-extrabold text-teal-700">$400B</div>
+                        <div class="text-xs font-semibold text-teal-600 mt-1" data-i18n="report_kpi2">Портфель IP</div>
+                        <p class="text-xs text-slate-400 mt-1 leading-snug" data-i18n="report_kpi2_desc">Оценка интеллектуальной собственности uST/GTI</p>
+                    </div>
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-5 text-center">
+                        <div class="text-2xl font-extrabold text-teal-700">IRR 35%</div>
+                        <div class="text-xs font-semibold text-teal-600 mt-1" data-i18n="report_kpi3">Доходность проектов</div>
+                        <p class="text-xs text-slate-400 mt-1 leading-snug" data-i18n="report_kpi3_desc">Внутренняя норма доходности по проектам</p>
+                    </div>
+                    <div class="bg-teal-50 border border-teal-200 rounded-lg p-5 text-center">
+                        <div class="text-2xl font-extrabold text-teal-700">5</div>
+                        <div class="text-xs font-semibold text-teal-600 mt-1" data-i18n="report_kpi4">Стратегических слоёв</div>
+                        <p class="text-xs text-slate-400 mt-1 leading-snug" data-i18n="report_kpi4_desc">Технологический, экономический, системный, геополитический, инвестиционный</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-xl p-8 text-center text-white">
+                    <h3 class="text-2xl font-bold mb-3" data-i18n="report_cta_title">Читать полное исследование</h3>
+                    <p class="text-slate-300 text-sm max-w-2xl mx-auto mb-6" data-i18n="report_cta_desc">
+                        Документ содержит полный массив аналитических данных, графиков, таблиц и источников — доступен бесплатно через Google Docs.
+                    </p>
+                    <a href="https://docs.google.com/document/d/1GOLW5IXuZXa_yqFXQLhAyPgvWaw3ebj3xwME3PePlGY/edit?usp=sharing"
+                       target="_blank" rel="noopener noreferrer"
+                       class="inline-block bg-teal-500 hover:bg-teal-400 text-slate-900 font-bold px-10 py-3 rounded-lg text-base transition-all hover:scale-105 shadow-md">
+                        <span data-i18n="report_cta_btn">Открыть документ Google Docs</span> ↗
+                    </a>
+                    <p class="text-slate-500 text-xs mt-4" data-i18n="report_cta_note">Документ открывается в Google Docs. Требуется доступ в интернет.</p>
                 </div>
 
             </section>
@@ -1140,8 +1227,8 @@
                 chart_eco_label1: "Земля, возвращённая в оборот",
                 chart_eco_label2: "Земля под опорами uST",
                 chart_eco_title: "Использование землеотвода",
-                nav5_title: "05. Источники &amp; Инвестиции",
-                nav5_sub: "Данные и краудинвестинг",
+                nav5_title: "05. Исследование",
+                nav5_sub: "Стратегический анализ",
                 src_h2: "05. Официальные Источники Данных",
                 src_intro: "Настоящий аналитический отчёт составлен на основе официальных материалов компании GTI (uST Inc.), независимых научных исследований и данных отраслевых экспертов. Все источники верифицированы и доступны в открытом доступе.",
                 src_cat1: "Официальные материалы GTI / uST Inc.",
@@ -1151,7 +1238,31 @@
                 rsw_cta_title: "Инвестируйте в инфраструктуру будущего",
                 rsw_cta_desc: "RSW Systems — официальная краудинвестиционная платформа проектов uST / GTI. Зарегистрируйтесь и получите доступ к инвестиционным инструментам в технологию, признанную аналитиками как системообразующую инфраструктуру XXI века.",
                 rsw_cta_btn: "Зарегистрироваться на RSW Systems",
-                rsw_cta_note: "Реферальная ссылка. Инвестиции сопряжены с риском. Не является финансовым советом."
+                rsw_cta_note: "Реферальная ссылка. Инвестиции сопряжены с риском. Не является финансовым советом.",
+                nav6_title: "06. Источники &amp; Инвестиции",
+                nav6_sub: "Данные и краудинвестинг",
+                report_h2: "Многоуровневый стратегический анализ uST Inc.",
+                report_intro: "Полноформатное аналитическое исследование технологии uST (GTI), охватывающее пять стратегических слоёв: технологический, экономический, системный, геополитический и инвестиционный.",
+                report_doc_label: "Аналитический документ",
+                report_doc_title: "Многоуровневый стратегический анализ uST Inc.",
+                report_doc_desc: "Google Docs · 2026 · RU",
+                report_summary_title: "Краткое содержание",
+                report_summary_p1: "Исследование охватывает полный технологический цикл uST Inc. (GTI) от физических основ до глобальной стратегии. Анализ подтверждает достижение уровня TRL 9 — максимальной технологической готовности к промышленному масштабированию.",
+                report_summary_p2: "Технологический слой демонстрирует кратное превосходство над конкурентами: материалоёмкость в 10 раз ниже метро, коэффициент аэродинамического сопротивления uFlash Cd=0.06, уникальный портфель интеллектуальной собственности стоимостью свыше $400 млрд.",
+                report_summary_p3: "Экономическая модель подтверждает IRR 20–35% при CAPEX в 10 раз ниже метро. Концепция IDC (Infrastructure Development Corporation) открывает доступ к земле как скрытому активу инфраструктурных проектов.",
+                report_summary_p4: "Геополитический и системный анализ показывает стратегическую роль uST как независимой от климата, санкций и энергокризисов инфраструктуры XXI века, способной изменить архитектуру глобальной логистики и расселения.",
+                report_kpi1: "Технологическая готовность",
+                report_kpi2: "Портфель IP",
+                report_kpi3: "Доходность проектов",
+                report_kpi4: "Стратегических слоёв",
+                report_kpi1_desc: "Максимальная готовность к промышленному масштабированию",
+                report_kpi2_desc: "Оценка интеллектуальной собственности uST/GTI",
+                report_kpi3_desc: "Внутренняя норма доходности по проектам",
+                report_kpi4_desc: "Технологический, экономический, системный, геополитический, инвестиционный",
+                report_cta_title: "Читать полное исследование",
+                report_cta_desc: "Документ содержит полный массив аналитических данных, графиков, таблиц и источников — доступен бесплатно через Google Docs.",
+                report_cta_btn: "Открыть документ Google Docs",
+                report_cta_note: "Документ открывается в Google Docs. Требуется доступ в интернет."
             },
             en: {
                 menu: "&#9776; Menu",
@@ -1289,8 +1400,8 @@
                 chart_eco_label1: "Land returned to use",
                 chart_eco_label2: "Land under uST supports",
                 chart_eco_title: "Land allocation",
-                nav5_title: "05. Sources &amp; Investment",
-                nav5_sub: "Data &amp; Crowdinvesting",
+                nav5_title: "05. Research",
+                nav5_sub: "Strategic Analysis",
                 src_h2: "05. Official Data Sources",
                 src_intro: "This analytical report is based on official materials from GTI (uST Inc.), independent academic research and industry expert data. All sources have been verified and are publicly available.",
                 src_cat1: "Official GTI / uST Inc. Materials",
@@ -1300,7 +1411,31 @@
                 rsw_cta_title: "Invest in the Infrastructure of the Future",
                 rsw_cta_desc: "RSW Systems is the official crowdinvestment platform for uST / GTI projects. Register and gain access to investment instruments in a technology recognised by analysts as foundational infrastructure of the 21st century.",
                 rsw_cta_btn: "Register on RSW Systems",
-                rsw_cta_note: "Referral link. Investments carry risk. Not financial advice."
+                rsw_cta_note: "Referral link. Investments carry risk. Not financial advice.",
+                nav6_title: "06. Sources &amp; Investment",
+                nav6_sub: "Data &amp; Crowdinvesting",
+                report_h2: "Multi-Level Strategic Analysis of uST Inc.",
+                report_intro: "A comprehensive analytical study of uST (GTI) technology covering five strategic layers: technology, economics, systems, geopolitics, and investment.",
+                report_doc_label: "Analytical Document",
+                report_doc_title: "Multi-Level Strategic Analysis of uST Inc.",
+                report_doc_desc: "Google Docs · 2026 · RU",
+                report_summary_title: "Summary",
+                report_summary_p1: "The study covers the complete technology lifecycle of uST Inc. (GTI) from physical fundamentals to global strategy. Analysis confirms TRL 9 — the highest level of technological readiness for industrial scaling.",
+                report_summary_p2: "The technology layer demonstrates decisive advantages over competitors: material intensity 10× lower than metro, uFlash aerodynamic drag coefficient Cd=0.06, unique intellectual property portfolio valued at over $400 billion.",
+                report_summary_p3: "The economic model confirms IRR 20–35% with CAPEX 10× lower than metro. The IDC (Infrastructure Development Corporation) concept unlocks land as a hidden asset in infrastructure projects.",
+                report_summary_p4: "The geopolitical and systemic analysis reveals uST's strategic role as 21st-century infrastructure independent of climate, sanctions, and energy crises — capable of transforming global logistics and settlement architecture.",
+                report_kpi1: "Technology Readiness",
+                report_kpi2: "IP Portfolio",
+                report_kpi3: "Project Returns",
+                report_kpi4: "Strategic Layers",
+                report_kpi1_desc: "Maximum readiness for industrial scaling",
+                report_kpi2_desc: "uST/GTI intellectual property valuation",
+                report_kpi3_desc: "Internal rate of return on projects",
+                report_kpi4_desc: "Technology, economic, systemic, geopolitical, investment",
+                report_cta_title: "Read the Full Research",
+                report_cta_desc: "The document contains a full array of analytical data, charts, tables, and sources — freely available via Google Docs.",
+                report_cta_btn: "Open Google Docs Document",
+                report_cta_note: "Document opens in Google Docs. Internet access required."
             },
             it: {
                 menu: "&#9776; Menu",
@@ -1438,8 +1573,8 @@
                 chart_eco_label1: "Terreno restituito all'uso",
                 chart_eco_label2: "Terreno sotto i supporti uST",
                 chart_eco_title: "Utilizzo del suolo",
-                nav5_title: "05. Fonti &amp; Investimenti",
-                nav5_sub: "Dati e crowdinvesting",
+                nav5_title: "05. Ricerca",
+                nav5_sub: "Analisi Strategica",
                 src_h2: "05. Fonti di Dati Ufficiali",
                 src_intro: "Il presente rapporto analitico è basato su materiali ufficiali di GTI (uST Inc.), ricerche accademiche indipendenti e dati di esperti del settore. Tutte le fonti sono verificate e disponibili al pubblico.",
                 src_cat1: "Materiali Ufficiali GTI / uST Inc.",
@@ -1449,7 +1584,31 @@
                 rsw_cta_title: "Investi nell'Infrastruttura del Futuro",
                 rsw_cta_desc: "RSW Systems è la piattaforma ufficiale di crowdinvestimento per i progetti uST / GTI. Registrati e ottieni accesso agli strumenti di investimento in una tecnologia riconosciuta dagli analisti come infrastruttura fondamentale del XXI secolo.",
                 rsw_cta_btn: "Registrati su RSW Systems",
-                rsw_cta_note: "Link referral. Gli investimenti comportano rischi. Non è un consiglio finanziario."
+                rsw_cta_note: "Link referral. Gli investimenti comportano rischi. Non è un consiglio finanziario.",
+                nav6_title: "06. Fonti &amp; Investimenti",
+                nav6_sub: "Dati e crowdinvesting",
+                report_h2: "Analisi Strategica Multilivello di uST Inc.",
+                report_intro: "Uno studio analitico completo della tecnologia uST (GTI) che copre cinque livelli strategici: tecnologia, economia, sistemi, geopolitica e investimenti.",
+                report_doc_label: "Documento Analitico",
+                report_doc_title: "Analisi Strategica Multilivello di uST Inc.",
+                report_doc_desc: "Google Docs · 2026 · RU",
+                report_summary_title: "Sommario",
+                report_summary_p1: "Lo studio copre l'intero ciclo tecnologico di uST Inc. (GTI) dai fondamenti fisici alla strategia globale. L'analisi conferma il raggiungimento del livello TRL 9 — la massima prontezza tecnologica per la scalabilità industriale.",
+                report_summary_p2: "Il livello tecnologico dimostra vantaggi decisivi sui concorrenti: intensità di materiale 10× inferiore alla metro, coefficiente di resistenza aerodinamica uFlash Cd=0,06, portfolio unico di proprietà intellettuale del valore di oltre $400 miliardi.",
+                report_summary_p3: "Il modello economico conferma un IRR del 20–35% con CAPEX 10× inferiore alla metro. Il concetto IDC (Infrastructure Development Corporation) sblocca il terreno come asset nascosto nei progetti infrastrutturali.",
+                report_summary_p4: "L'analisi geopolitica e sistemica rivela il ruolo strategico di uST come infrastruttura del XXI secolo indipendente dal clima, dalle sanzioni e dalle crisi energetiche — in grado di trasformare la logistica globale e l'architettura degli insediamenti.",
+                report_kpi1: "Prontezza Tecnologica",
+                report_kpi2: "Portfolio IP",
+                report_kpi3: "Rendimento Progetti",
+                report_kpi4: "Livelli Strategici",
+                report_kpi1_desc: "Massima prontezza per la scalabilità industriale",
+                report_kpi2_desc: "Valutazione della proprietà intellettuale uST/GTI",
+                report_kpi3_desc: "Tasso interno di rendimento sui progetti",
+                report_kpi4_desc: "Tecnologico, economico, sistemico, geopolitico, investimento",
+                report_cta_title: "Leggi la Ricerca Completa",
+                report_cta_desc: "Il documento contiene un'ampia raccolta di dati analitici, grafici, tabelle e fonti — disponibile gratuitamente tramite Google Docs.",
+                report_cta_btn: "Apri il Documento Google Docs",
+                report_cta_note: "Il documento si apre in Google Docs. Accesso a Internet richiesto."
             },
             es: {
                 menu: "&#9776; Menú",
@@ -1587,8 +1746,8 @@
                 chart_eco_label1: "Suelo devuelto al uso",
                 chart_eco_label2: "Suelo bajo apoyos uST",
                 chart_eco_title: "Uso del suelo",
-                nav5_title: "05. Fuentes e Inversiones",
-                nav5_sub: "Datos y crowdinversión",
+                nav5_title: "05. Investigación",
+                nav5_sub: "Análisis Estratégico",
                 src_h2: "05. Fuentes de Datos Oficiales",
                 src_intro: "El presente informe analítico está basado en materiales oficiales de GTI (uST Inc.), investigaciones académicas independientes y datos de expertos del sector. Todas las fuentes han sido verificadas y están disponibles al público.",
                 src_cat1: "Materiales Oficiales GTI / uST Inc.",
@@ -1598,7 +1757,31 @@
                 rsw_cta_title: "Invierte en la Infraestructura del Futuro",
                 rsw_cta_desc: "RSW Systems es la plataforma oficial de crowdinversión para los proyectos uST / GTI. Regístrate y accede a instrumentos de inversión en una tecnología reconocida por los analistas como infraestructura fundamental del siglo XXI.",
                 rsw_cta_btn: "Registrarse en RSW Systems",
-                rsw_cta_note: "Enlace de referido. Las inversiones conllevan riesgos. No es asesoramiento financiero."
+                rsw_cta_note: "Enlace de referido. Las inversiones conllevan riesgos. No es asesoramiento financiero.",
+                nav6_title: "06. Fuentes e Inversiones",
+                nav6_sub: "Datos y crowdinversión",
+                report_h2: "Análisis Estratégico Multinivel de uST Inc.",
+                report_intro: "Un estudio analítico completo de la tecnología uST (GTI) que abarca cinco capas estratégicas: tecnología, economía, sistemas, geopolítica e inversión.",
+                report_doc_label: "Documento Analítico",
+                report_doc_title: "Análisis Estratégico Multinivel de uST Inc.",
+                report_doc_desc: "Google Docs · 2026 · RU",
+                report_summary_title: "Resumen",
+                report_summary_p1: "El estudio cubre el ciclo tecnológico completo de uST Inc. (GTI) desde los fundamentos físicos hasta la estrategia global. El análisis confirma el nivel TRL 9 — la máxima preparación tecnológica para el escalado industrial.",
+                report_summary_p2: "La capa tecnológica demuestra ventajas decisivas sobre los competidores: intensidad de materiales 10× menor que el metro, coeficiente de resistencia aerodinámica uFlash Cd=0,06, cartera única de propiedad intelectual valorada en más de $400 mil millones.",
+                report_summary_p3: "El modelo económico confirma una TIR del 20–35% con CAPEX 10× menor que el metro. El concepto CDI (Corporación de Desarrollo Infraestructural) desbloquea el suelo como activo oculto en proyectos de infraestructura.",
+                report_summary_p4: "El análisis geopolítico y sistémico revela el papel estratégico de uST como infraestructura del siglo XXI independiente del clima, las sanciones y las crisis energéticas — capaz de transformar la logística global y la arquitectura del asentamiento.",
+                report_kpi1: "Preparación Tecnológica",
+                report_kpi2: "Cartera IP",
+                report_kpi3: "Rendimiento Proyectos",
+                report_kpi4: "Capas Estratégicas",
+                report_kpi1_desc: "Máxima preparación para el escalado industrial",
+                report_kpi2_desc: "Valoración de propiedad intelectual uST/GTI",
+                report_kpi3_desc: "Tasa interna de retorno de los proyectos",
+                report_kpi4_desc: "Tecnológico, económico, sistémico, geopolítico, inversión",
+                report_cta_title: "Leer la Investigación Completa",
+                report_cta_desc: "El documento contiene un amplio conjunto de datos analíticos, gráficos, tablas y fuentes — disponible gratuitamente a través de Google Docs.",
+                report_cta_btn: "Abrir Documento Google Docs",
+                report_cta_note: "El documento se abre en Google Docs. Se requiere acceso a Internet."
             }
         };
 
@@ -1615,7 +1798,8 @@
                 econ:      { title: 'Экономика uST: CAPEX/OPEX, IRR 20–35%, Земля как актив | GTI', desc: 'CAPEX в 10 раз ниже метро, IRR 20–35%, занятость земли в 100 раз меньше. Новая модель КИР — Корпорации Инфраструктурного Развития.' },
                 system:    { title: 'Системный Слой uST: Логистика, Порты, Линейные Города uCity', desc: 'uST устраняет разрывы в цепочках поставок: рентабельность от 1 млн тонн, портовые зоны на шельфе, линейные города uCity.' },
                 geo:       { title: 'Геополитика uST: Климатическая Устойчивость, Суверенитет, uTerra', desc: 'uST как инструмент суверенитета: независимость от климата, санкций и энергокризисов. Биоинтеграция uTerra.' },
-                src:       { title: 'Источники данных uST + Инвестиции RSW Systems | GTI Analytics', desc: 'Официальные источники аналитики uST: ust.inc, unitsky.engineer, научные публикации. Краудинвестинг через RSW Systems.' }
+                src:       { title: 'Источники данных uST + Инвестиции RSW Systems | GTI Analytics', desc: 'Официальные источники аналитики uST: ust.inc, unitsky.engineer, научные публикации. Краудинвестинг через RSW Systems.' },
+                report:    { title: 'Стратегический анализ uST Inc. | Полное исследование GTI 2026', desc: 'Многоуровневый стратегический анализ uST: TRL 9, $400B IP, IRR 35%, 5 стратегических слоёв. Ссылка на полный документ в Google Docs.' }
             },
             en: {
                 dashboard: { title: 'uST 2026 Situation Overview: Inflection Point | GTI Analytics', desc: 'uST Inc. (GTI) has passed the Inflection Point: TRL 9, IP $400B. Analysis of readiness for global expansion 2026–2035.' },
@@ -1623,7 +1807,8 @@
                 econ:      { title: 'uST Economics: CAPEX/OPEX, IRR 20–35%, Land as Hidden Asset', desc: 'CAPEX 10× lower than metro, IRR 20–35%, 100× less land use. New IDC model — Infrastructure Development Corporations.' },
                 system:    { title: 'uST System Layer: Logistics, Offshore Ports, Linear Cities uCity', desc: 'uST bridges global supply chain gaps: profitable from 1 Mt/year, offshore port zones, linear uCity development.' },
                 geo:       { title: 'uST Geopolitics: Climate Resilience, Sovereignty, uTerra | GTI', desc: 'uST as a sovereignty instrument: climate, sanctions and energy-crisis independence. Ecological uTerra biointegration.' },
-                src:       { title: 'uST Data Sources + RSW Systems Investment | GTI Analytics', desc: 'Official uST analytics sources: ust.inc, unitsky.engineer, academic publications. Crowdinvest via RSW Systems.' }
+                src:       { title: 'uST Data Sources + RSW Systems Investment | GTI Analytics', desc: 'Official uST analytics sources: ust.inc, unitsky.engineer, academic publications. Crowdinvest via RSW Systems.' },
+                report:    { title: 'Strategic Analysis of uST Inc. | Full GTI Research 2026', desc: 'Multi-level strategic analysis of uST: TRL 9, $400B IP, IRR 35%, 5 strategic layers. Link to full Google Docs document.' }
             },
             it: {
                 dashboard: { title: 'uST 2026 Panoramica: Punto di Svolta | GTI Analytics', desc: 'uST Inc. (GTI) ha superato il Punto di Svolta: TRL 9, IP $400 miliardi. Analisi della disponibilità per l\'espansione globale 2026–2035.' },
@@ -1631,7 +1816,8 @@
                 econ:      { title: 'Economia uST: CAPEX/OPEX, IRR 20–35%, Terreno come Attivo', desc: 'CAPEX 10× inferiore alla metro, IRR 20–35%, occupazione di suolo 100× minore. Modello SSI — Società di Sviluppo Infrastrutturale.' },
                 system:    { title: 'Livello Sistemico uST: Logistica, Porti Offshore, Città Lineari uCity', desc: 'uST colma le lacune nelle catene di approvvigionamento: redditività da 1 Mt/anno, zone portuali offshore, sviluppo lineare uCity.' },
                 geo:       { title: 'Geopolitica uST: Resilienza Climatica, Sovranità, uTerra | GTI', desc: 'uST come strumento di sovranità: indipendenza da clima, sanzioni e crisi energetiche. Biointegrazione ecologica uTerra.' },
-                src:       { title: 'Fonti dati uST + Investimenti RSW Systems | GTI Analytics', desc: 'Fonti ufficiali analisi uST: ust.inc, unitsky.engineer, pubblicazioni accademiche. Crowdinvestimento tramite RSW Systems.' }
+                src:       { title: 'Fonti dati uST + Investimenti RSW Systems | GTI Analytics', desc: 'Fonti ufficiali analisi uST: ust.inc, unitsky.engineer, pubblicazioni accademiche. Crowdinvestimento tramite RSW Systems.' },
+                report:    { title: 'Analisi Strategica di uST Inc. | Ricerca Completa GTI 2026', desc: 'Analisi strategica multilivello di uST: TRL 9, $400B IP, IRR 35%, 5 livelli strategici. Link al documento completo su Google Docs.' }
             },
             es: {
                 dashboard: { title: 'uST 2026 Panorama: Punto de Inflexión | GTI Analytics', desc: 'uST Inc. (GTI) ha superado el Punto de Inflexión: TRL 9, IP $400B. Análisis de preparación para la expansión global 2026–2035.' },
@@ -1639,7 +1825,8 @@
                 econ:      { title: 'Economía uST: CAPEX/OPEX, TIR 20–35%, Suelo como Activo Oculto', desc: 'CAPEX 10× menor que el metro, TIR 20–35%, uso de suelo 100× menor. Nuevo modelo CDI — Corporaciones de Desarrollo Infraestructural.' },
                 system:    { title: 'Capa Sistémica uST: Logística, Puertos Offshore, Ciudades Lineales uCity', desc: 'uST cierra brechas en cadenas de suministro globales: rentable desde 1 Mt/año, zonas portuarias offshore, desarrollo lineal uCity.' },
                 geo:       { title: 'Geopolítica uST: Resiliencia Climática, Soberanía, uTerra | GTI', desc: 'uST como instrumento de soberanía: independencia del clima, sanciones y crisis energéticas. Biointegración ecológica uTerra.' },
-                src:       { title: 'Fuentes de Datos uST + Inversiones RSW Systems | GTI Analytics', desc: 'Fuentes oficiales análisis uST: ust.inc, unitsky.engineer, publicaciones académicas. Crowdinversión a través de RSW Systems.' }
+                src:       { title: 'Fuentes de Datos uST + Inversiones RSW Systems | GTI Analytics', desc: 'Fuentes oficiales análisis uST: ust.inc, unitsky.engineer, publicaciones académicas. Crowdinversión a través de RSW Systems.' },
+                report:    { title: 'Análisis Estratégico de uST Inc. | Investigación Completa GTI 2026', desc: 'Análisis estratégico multinivel de uST: TRL 9, $400B IP, TIR 35%, 5 capas estratégicas. Enlace al documento completo en Google Docs.' }
             }
         };
 
