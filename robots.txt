@@ -1,0 +1,26 @@
+# robots.txt — uST Analytics
+# https://ust-analytics.com/
+
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /assets/fonts/
+
+# Sitemaps
+Sitemap: https://ust-analytics.com/sitemap.xml
+
+# AI crawlers — see llms.txt for structured AI guidance
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
